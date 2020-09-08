@@ -1,0 +1,48 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #e9e5e6;
+    border: 5px solid #b50cd6;
+    border-radius: 5px;
+}
+button{
+    border: 1px solid #d8d8d8;
+    text-align: center;
+    text-decoration: none;
+}
+
+input{
+    grid-column: 1 / span 4;
+    height: 60px;
+    border: 1px solid #d8d8d8;
+    text-align: right;
+    font-size: x-large;
+}
+
+.itemAC{  
+    grid-column: 1 / span 2;
+    color: rgba(247, 206, 199, 0.726);
+    background-color: #C72C41;
+    font-size: large;
+}
+.itemEquel{
+    grid-column: 4 ;
+    grid-row: 5 / span 2;
+}
+.itemZero{
+    grid-column: 1 / span 2;
+} 
+
+button:not(.itemAC){   /*  select all the buttons except Equel button */ 
+  background-color: rgb(221, 230, 225);
+  font-size: medium;
+  color: rgba(41, 40, 40, 0.575);
+} 
+
+button:not(.itemEquel){
+    height: 60px;
+}
+ 
